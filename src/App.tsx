@@ -7,7 +7,7 @@ import { About } from '@/components/About';
 import { Circles } from '@/components/Circles';
 import { TechLine } from '@/components/TechLine';
 import { FAQs } from '@/components/FAQs';
-// import { Footer } from '@/components/Footer';
+import { Footer } from '@/components/Footer';
 
 function App() {
 	return (
@@ -20,7 +20,7 @@ function App() {
 			<Circles />
 			<TechLine />
 			<FAQs />
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }
