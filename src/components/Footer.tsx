@@ -10,7 +10,7 @@ import { FaHeart } from 'react-icons/fa';
 
 export function Footer() {
 	return (
-		<footer className="relative flex w-[100vw] items-start justify-between bg-zinc-600 pt-10 max-md:flex-col md:h-72">
+		<footer className="relative flex w-[100vw] items-start justify-between bg-zinc-500 pt-10 max-md:flex-col md:h-72">
 			<div className="flex w-[30vw] translate-x-16 flex-col items-center justify-center max-md:w-fit max-md:translate-x-8">
 				<img src={logo} alt="logo" className="h-8" />
 				<p className="pt-4 text-lg text-background">Google Developer Student Clubs</p>

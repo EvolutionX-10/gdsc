@@ -87,7 +87,7 @@ section {
 }
 
 .circle {
-	animation: rotate 60s linear infinite;
+	animation: rotate 30s linear infinite;
 }
 
 .title:hover ~ .line {

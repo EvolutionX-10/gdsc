@@ -13,7 +13,7 @@ export function Circles() {
 
 	const members = {
 		title: 'Community Members',
-		amount: 1000,
+		amount: 2000,
 	};
 
 	const attendees = {
