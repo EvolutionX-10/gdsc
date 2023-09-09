@@ -22,11 +22,11 @@ export function Circles() {
 	};
 
 	return (
-		<div className="flex w-[90vw] flex-wrap items-start justify-around mb-12">
+		<section className="flex w-[90vw] flex-row flex-wrap items-start justify-around gap-12 max-md:flex-col max-md:items-center">
 			<Circle {...years} />
 			<Circle {...events} />
 			<Circle {...members} />
 			<Circle {...attendees} />
-		</div>
+		</section>
 	);
 }

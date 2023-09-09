@@ -19,7 +19,7 @@ const Switch = React.forwardRef<
 	>
 		<SwitchPrimitives.Thumb
 			className={cn(
-				'switch_thumb pointer-events-none flex aspect-square h-5 items-center justify-center rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-[52px] data-[state=unchecked]:translate-x-1',
+				'switch_thumb pointer-events-none flex aspect-square h-5 items-center justify-center rounded-full bg-background shadow-lg ring-0 transition-transform duration-300 data-[state=checked]:translate-x-[52px] data-[state=unchecked]:translate-x-1',
 			)}
 		>
 			<img src={sun} alt="sun" className="sun h-3" />

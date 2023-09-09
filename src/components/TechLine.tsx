@@ -20,20 +20,20 @@ export function TechLine() {
 	};
 
 	return (
-		<div className="flex w-full flex-col items-center justify-center">
-			<div className="relative m-36 flex h-1 w-[85vw] items-center justify-center rounded-sm bg-red-500">
-				<span className="absolute flex items-center justify-center bg-background px-16 text-5xl text-secondary">
+		<section className="flex flex-col items-center justify-center flex-wrap">
+			<div className="relative flex h-1 my-24 mb-32 w-[85vw] items-center justify-center rounded-sm bg-red-500">
+				<span className="absolute flex items-center justify-center bg-background text-5xl text-secondary">
 					Technologies
 				</span>
-				<p className="translate-y-16 text-2xl text-primary">
+				<p className="translate-y-16 text-2xl text-primary text-center">
 					Domains That Excite Us to Collaborate and Teach!
 				</p>
 			</div>
-			<div className="flex w-full justify-around pb-24">
+			<div className="flex flex-wrap justify-around max-md:gap-12 w-full">
 				<Tech {...android} />
 				<Tech {...flutter} />
 				<Tech {...cloud} />
 			</div>
-		</div>
+		</section>
 	);
 }

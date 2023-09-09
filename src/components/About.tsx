@@ -27,7 +27,7 @@ export function About() {
 
 	return (
 		<section id="about" className="flex flex-col items-center justify-center gap-4">
-			<div className="text-5xl font-medium text-secondary-foreground">Get To Know Us!</div>
+			<div className="text-5xl font-medium text-secondary-foreground text-center">Get To Know Us!</div>
 			<div className="flex flex-col items-center justify-center gap-4">
 				<AboutOur {...mission} />
 				<AboutOur {...perspective} swap />

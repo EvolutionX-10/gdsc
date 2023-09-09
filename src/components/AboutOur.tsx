@@ -1,7 +1,8 @@
 import type { CSSProperties } from 'react';
 
 export function AboutOur(props: AboutOurProps) {
-	const swap = props.swap ? 'md:flex-row' : 'md:flex-row-reverse';
+	const swap = props.swap ? 'md:flex-row max-md:items-start' : 'md:flex-row-reverse max-md:items-end';
+
 	const style = {
 		background: `linear-gradient(${props.swap ? '270' : '90'}deg, transparent 97%, ${
 			props.color
@@ -14,16 +15,16 @@ export function AboutOur(props: AboutOurProps) {
 	};
 
 	const imgTranslate = {
-		transform: props.swap ? 'translateX(-4rem)' : 'translateX(4rem)',
+		// transform: props.swap ? 'translateX(-4rem)' : 'translateX(4rem)',
 	};
 
 	return (
 		<div className="flex w-[80vw] flex-col items-center justify-center gap-4 py-16">
 			<div className="title text-5xl font-medium text-secondary-foreground">{props.title}</div>
 			<div className="line h-1 w-44 rounded-md" style={{ background: props.color }} />
-			<div className={'flex flex-col items-center justify-between ' + swap}>
-				<div style={style} className="flex w-2/4 items-center justify-between py-6">
-					<div style={translate} className="min-h-36 text-2xl font-medium text-secondary">
+			<div className={'flex flex-col items-center justify-between max-md:items-start ' + swap}>
+				<div style={style} className="flex w-2/4 items-center justify-between py-6 max-md:w-5/6">
+					<div style={translate} className="text-2xl font-medium text-secondary max-md:text-xl">
 						{props.description}
 					</div>
 				</div>

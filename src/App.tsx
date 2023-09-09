@@ -7,7 +7,7 @@ import { About } from '@/components/About';
 import { Circles } from '@/components/Circles';
 import { TechLine } from '@/components/TechLine';
 import { FAQs } from '@/components/FAQs';
-import { Footer } from '@/components/Footer';
+// import { Footer } from '@/components/Footer';
 
 function App() {
 	return (
@@ -15,12 +15,12 @@ function App() {
 			<Navbar />
 			<Home />
 			<Button>JOIN US</Button>
-			<img src={down} alt="scroll_down" className="mt-16 h-16" />
+			<img src={down} alt="scroll_down" className="m-16 h-16" />
 			<About />
 			<Circles />
 			<TechLine />
 			<FAQs />
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

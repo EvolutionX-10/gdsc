@@ -15,17 +15,27 @@ export function Navbar() {
 	}, [theme]);
 
 	return (
-		<nav className="sticky top-0 z-20 flex w-[100vw] select-none items-center justify-center gap-16 overflow-visible border-b-2 bg-background p-6 drop-shadow">
+		<nav className="sticky top-0 z-20 flex w-[100vw] select-none items-center justify-center gap-16 overflow-visible border-b-2 bg-background p-6 drop-shadow max-md:gap-0">
 			<div className="flex items-center justify-center gap-4">
 				<img src={logo} className="App-logo h-8" alt="logo" />
-				<h3 className="text-xl uppercase tracking-wide">GDSC RCOEM</h3>
+				<h3 className="text-xl uppercase tracking-wide text-secondary">GDSC RCOEM</h3>
 			</div>
-			<div className="flex w-2/3 justify-end gap-11 text-xl text-primary">
-				<a href="#home">Home</a>
-				<a href="#events">Events</a>
-				<a href="#team">Team</a>
-				<a href="#alumni">Alumni</a>
-				<a href="#contact">Contact</a>
+			<div className="flex w-2/3 justify-end gap-11 text-xl">
+				<a className="text-primary max-md:hidden" href="#home">
+					Home
+				</a>
+				<a className="text-primary max-md:hidden" href="#events">
+					Events
+				</a>
+				<a className="text-primary max-md:hidden" href="#team">
+					Team
+				</a>
+				<a className="text-primary max-md:hidden" href="#alumni">
+					Alumni
+				</a>
+				<a className="text-primary max-md:hidden" href="#contact">
+					Contact
+				</a>
 				<Switch onClick={toggleTheme} />
 			</div>
 		</nav>
