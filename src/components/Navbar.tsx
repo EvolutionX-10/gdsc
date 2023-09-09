@@ -21,20 +21,25 @@ export function Navbar() {
 				<h3 className="text-xl uppercase tracking-wide text-secondary">GDSC RCOEM</h3>
 			</div>
 			<div className="flex w-2/3 justify-end gap-11 text-xl">
-				<a className="text-primary max-md:hidden" href="#home">
+				<a className="group text-primary transition duration-300 max-md:hidden" href="#home">
 					Home
+					<span className="block h-0.5 max-w-0 bg-sky-600 transition-all duration-500 group-hover:max-w-full"></span>
 				</a>
-				<a className="text-primary max-md:hidden" href="#events">
+				<a className="group text-primary transition duration-300 max-md:hidden" href="#events">
 					Events
+					<span className="block h-0.5 max-w-0 bg-sky-600 transition-all duration-500 group-hover:max-w-full"></span>
 				</a>
-				<a className="text-primary max-md:hidden" href="#team">
+				<a className="group text-primary transition duration-300 max-md:hidden" href="#team">
 					Team
+					<span className="block h-0.5 max-w-0 bg-sky-600 transition-all duration-500 group-hover:max-w-full"></span>
 				</a>
-				<a className="text-primary max-md:hidden" href="#alumni">
+				<a className="group text-primary transition duration-300 max-md:hidden" href="#alumni">
 					Alumni
+					<span className="block h-0.5 max-w-0 bg-sky-600 transition-all duration-500 group-hover:max-w-full"></span>
 				</a>
-				<a className="text-primary max-md:hidden" href="#contact">
+				<a className="group text-primary transition duration-300 max-md:hidden" href="#contact">
 					Contact
+					<span className="block h-0.5 max-w-0 bg-sky-600 transition-all duration-500 group-hover:max-w-full"></span>
 				</a>
 				<Switch onClick={toggleTheme} />
 			</div>
