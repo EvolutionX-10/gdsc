@@ -62,12 +62,17 @@ section {
 .gdsc::before {
 	content: '';
 	position: absolute;
-	background-image: url(/images/plane.svg);
+	mask: url(/images/plane.svg);
+	mask-size: cover;
+	-webkit-mask: url(/images/plane.svg);
+	-webkit-mask-size: cover;
+	background-color: hsl(var(--primary));
 	background-repeat: no-repeat;
-	background-size: 80%;
+	mask-size: 500px;
+	mask-repeat: no-repeat;
 	width: 37rem;
 	height: 217px;
-	top: -10vw;
+	top: -7vw;
 	left: 30vw;
 	z-index: -1;
 }
@@ -112,13 +117,12 @@ section {
 	}
 
 	.gdsc::before {
-		background-image: url(/images/plane.svg);
-		background-repeat: no-repeat;
-		background-size: 80%;
 		width: 85vw;
 		top: 0;
+		mask-size: contain;
 		left: 0;
+		opacity: 0.75;
 		z-index: -1;
-		/* outline: 4px solid blue; */
+		outline: 4px solid blue;
 	}
 }

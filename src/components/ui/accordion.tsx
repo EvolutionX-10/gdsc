@@ -46,7 +46,7 @@ const AccordionContent = React.forwardRef<
 		)}
 		{...props}
 	>
-		<div className="pb-4 pt-4">{children}</div>
+		<div className="pb-4 pt-4 text-secondary">{children}</div>
 	</AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

@@ -24,7 +24,7 @@ export function FAQs() {
 		},
 		{
 			question: 'How to reach us?',
-			answer: 'Mail us at "gdsc.rknec@gmail.com "',
+			answer: 'Mail us at "gdsc.rknec@gmail.com"',
 		},
 	];
 
@@ -41,7 +41,7 @@ export function FAQs() {
 			<p className="p-12 text-3xl font-medium text-primary">FAQs</p>
 			<div className="flex w-4/5 flex-col items-center justify-center gap-6">
 				{faqs.map((faq, i) => (
-					<FAQ key={i} color={`var(${colors[i]})`} question={faq.question} answer={faq.answer} />
+					<FAQ key={i} color={`var(${colors[i]})`} {...faq} />
 				))}
 			</div>
 		</div>

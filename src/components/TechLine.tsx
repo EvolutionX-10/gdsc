@@ -21,8 +21,8 @@ export function TechLine() {
 
 	return (
 		<section className="flex flex-col items-center justify-center flex-wrap">
-			<div className="relative flex h-1 my-24 mb-32 w-[85vw] items-center justify-center rounded-sm bg-red-500">
-				<span className="absolute flex items-center justify-center bg-background text-5xl text-secondary">
+			<div className="relative flex h-1 my-24 mb-32 w-[85vw] max-md:w-[95vw] items-center justify-center rounded-sm bg-red-500">
+				<span className="absolute flex items-center justify-center bg-background text-5xl text-secondary md:px-24">
 					Technologies
 				</span>
 				<p className="translate-y-16 text-2xl text-primary text-center">
